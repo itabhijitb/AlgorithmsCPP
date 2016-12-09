@@ -1,0 +1,159 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav</Extensions>
+    </Filter>
+    <Filter Include="Header Files\inc">
+      <UniqueIdentifier>{aa4b860f-1774-4d75-9294-0d0339a658e7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\inc\ds">
+      <UniqueIdentifier>{9cbe1d60-0b32-49c4-8067-7fdfee06e39d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\inc\algo">
+      <UniqueIdentifier>{9bb538fa-c17d-4f4c-84e1-14419ad0ffc1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\inc\util">
+      <UniqueIdentifier>{af11cbfe-0fc0-466f-814b-eb4c819a8c1c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\inc\cc">
+      <UniqueIdentifier>{18f0564d-2ba0-43a4-8f60-36fe94304199}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\inc\tests">
+      <UniqueIdentifier>{3f455964-825d-4b93-8a68-14bdc1651e8f}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="algorithms\inc\util\c11_type_traits.h">
+      <Filter>Header Files\inc\util</Filter>
+    </ClInclude>
+    <ClInclude Include="algorithms\inc\cc\Ideas.h">
+      <Filter>Header Files\inc\cc</Filter>
+    </ClInclude>
+    <ClInclude Include="algorithms\inc\algo\Lev.h">
+      <Filter>Header Files\inc\algo</Filter>
+    </ClInclude>
+    <ClInclude Include="algorithms\inc\algo\LIS.h">
+      <Filter>Header Files\inc\algo</Filter>
+    </ClInclude>
+    <ClInclude Include="algorithms\inc\algo\IntegerKnapsack.h">
+      <Filter>Header Files\inc\algo</Filter>
+    </ClInclude>
+    <ClInclude Include="algorithms\inc\ds\AVL.h">
+      <Filter>Header Files\inc\ds</Filter>
+    </ClInclude>
+    <ClInclude Include="algorithms\inc\algo\heapq.h">
+      <Filter>Header Files\inc\ds</Filter>
+    </ClInclude>
+    <ClInclude Include="algorithms\inc\ds\LList.h">
+      <Filter>Header Files\inc\ds</Filter>
+    </ClInclude>
+    <ClInclude Include="algorithms\inc\algo\Loop.h">
+      <Filter>Header Files\inc\algo</Filter>
+    </ClInclude>
+    <ClInclude Include="algorithms\inc\algo\LPS.h">
+      <Filter>Header Files\inc\algo</Filter>
+    </ClInclude>
+    <ClInclude Include="algorithms\inc\algo\max_sub_array.h">
+      <Filter>Header Files\inc\algo</Filter>
+    </ClInclude>
+    <ClInclude Include="algorithms\inc\algo\Maze.h">
+      <Filter>Header Files\inc\algo</Filter>
+    </ClInclude>
+    <ClInclude Include="algorithms\inc\algo\mergesort.h">
+      <Filter>Header Files\inc\algo</Filter>
+    </ClInclude>
+    <ClInclude Include="algorithms\inc\algo\mergesort_async.h">
+      <Filter>Header Files\inc\algo</Filter>
+    </ClInclude>
+    <ClInclude Include="algorithms\inc\algo\MVCS.h">
+      <Filter>Header Files\inc\algo</Filter>
+    </ClInclude>
+    <ClInclude Include="algorithms\inc\algo\Permutation.h">
+      <Filter>Header Files\inc\algo</Filter>
+    </ClInclude>
+    <ClInclude Include="algorithms\inc\algo\qsort.h">
+      <Filter>Header Files\inc\algo</Filter>
+    </ClInclude>
+    <ClInclude Include="algorithms\inc\algo\qsort_async.h">
+      <Filter>Header Files\inc\algo</Filter>
+    </ClInclude>
+    <ClInclude Include="algorithms\inc\util\Memorize.h">
+      <Filter>Header Files\inc\util</Filter>
+    </ClInclude>
+    <ClInclude Include="algorithms\inc\util\pprinter.h">
+      <Filter>Header Files\inc\util</Filter>
+    </ClInclude>
+    <ClInclude Include="algorithms\inc\cc\Qualys.h">
+      <Filter>Header Files\inc\cc</Filter>
+    </ClInclude>
+    <ClInclude Include="algorithms\inc\cc\Sapient.h">
+      <Filter>Header Files\inc\cc</Filter>
+    </ClInclude>
+    <ClInclude Include="algorithms\inc\cc\Sapient_Madhu.h">
+      <Filter>Header Files\inc\cc</Filter>
+    </ClInclude>
+    <ClInclude Include="algorithms\TestTree.h">
+      <Filter>Header Files\inc\tests</Filter>
+    </ClInclude>
+    <ClInclude Include="algorithms\inc\tests\TestLList.h">
+      <Filter>Header Files\inc\tests</Filter>
+    </ClInclude>
+    <ClInclude Include="algorithms\inc\tests\TestSort.h">
+      <Filter>Header Files\inc\tests</Filter>
+    </ClInclude>
+    <ClInclude Include="algorithms\inc\tests\TestTree.h">
+      <Filter>Header Files\inc\tests</Filter>
+    </ClInclude>
+    <ClInclude Include="algorithms\inc\tests\TestCodeComp.h">
+      <Filter>Header Files\inc\tests</Filter>
+    </ClInclude>
+    <ClInclude Include="algorithms\inc\tests\TestAlgo.h">
+      <Filter>Header Files\inc\tests</Filter>
+    </ClInclude>
+    <ClInclude Include="algorithms\inc\ds\SStack.h">
+      <Filter>Header Files\inc\ds</Filter>
+    </ClInclude>
+    <ClInclude Include="algorithms\inc\ds\Tree.h">
+      <Filter>Header Files\inc\ds</Filter>
+    </ClInclude>
+    <ClInclude Include="algorithms\inc\cc\Wise.h">
+      <Filter>Header Files\inc\cc</Filter>
+    </ClInclude>
+    <ClInclude Include="algorithms\inc\algo\Server.h">
+      <Filter>Header Files\inc\algo</Filter>
+    </ClInclude>
+    <ClInclude Include="algorithms\inc\util\Util.h">
+      <Filter>Header Files\inc\util</Filter>
+    </ClInclude>
+    <ClInclude Include="algorithms\inc\algo\RLD.h">
+      <Filter>Header Files\inc\algo</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="meeting_room.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MinAbsSum.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="palindrome_list.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Source.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UnitTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>
