@@ -78,7 +78,9 @@ namespace SapientMadhu {
 		auto UnitTest() {
 			BEGIN_TEST("test_cases_cc_sapient_maxmed.csv")
 				ADD_TEST(Sapient::MaxMed, Sample1);
-			ADD_TEST(Sapient::MaxMed, Sample2);
+				ADD_TEST(Sapient::MaxMed, Sample2);
+				ADD_TEST(SapientMadhu::MaxMed, Sample1);
+				ADD_TEST(SapientMadhu::MaxMed, Sample2);
 			END_TEST(ALL, FORMATTED, std::cout)
 		}
 	}

@@ -1,5 +1,5 @@
-#ifndef __TEST_LIST_H__
-#define __TEST_LIST_H__
+#ifndef __TEST_TREE_H__
+#define __TEST_TREE_H__
 #include <algorithm>
 #include <chrono>
 #include <random>
@@ -21,7 +21,7 @@ namespace Tree {
 			}
 			bool IsCommitted()
 			{
-				return tree.LCS == 4;
+				return tree.LCS() == 4;
 			}
 			Tree::BST::BST<int> tree;
 		};

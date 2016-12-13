@@ -112,7 +112,12 @@ namespace DP {
 			std::size_t output;
 		};
 		auto UnitTestLPS() {
-			BEGIN_TEST("test_cases_lev.csv")
+			BEGIN_TEST("test_cases_algo.csv")
+				ADD_TEST(DP::LPS, Sample);
+				ADD_TEST(DP::LPS, Sanity);
+				ADD_TEST(DP::LPS, NonTrivialOdd);
+				ADD_TEST(DP::LPS, NonTrivialEven);
+				ADD_TEST(DP::LPS, ScaleUp);
 				ADD_TEST(DP::LEV, Sample);
 			END_TEST(ALL, FORMATTED, std::cout)
 		}

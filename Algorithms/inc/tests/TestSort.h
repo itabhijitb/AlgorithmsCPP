@@ -31,11 +31,6 @@ namespace Sort {
 			std::vector<int> arr;
 			std::vector<int> output;
 		};
-		auto UnitTest() {
-			BEGIN_TEST("test_cases_sort_mergesort.csv")
-				ADD_TEST(Sort::MergeSort, Sample);
-			END_TEST(ALL, FORMATTED, std::cout)
-		}
 	}
 	namespace MergeSortAsync {
 		struct Sample : public OOTestNS::Pledge
@@ -56,11 +51,6 @@ namespace Sort {
 			std::vector<int> arr;
 			std::vector<int> output;
 		};
-		auto UnitTest() {
-			BEGIN_TEST("test_cases_sort_mergesort_async.csv")
-				ADD_TEST(Sort::MergeSortAsync, Sample);
-			END_TEST(ALL, FORMATTED, std::cout)
-		}
 	}
 	namespace QuickSort {
 		struct Sample : public OOTestNS::Pledge
@@ -81,11 +71,6 @@ namespace Sort {
 			std::vector<int> arr;
 			std::vector<int> output;
 		};
-		auto UnitTest() {
-			BEGIN_TEST("test_cases_sort_qsort.csv")
-				ADD_TEST(Sort::QuickSort, Sample);
-			END_TEST(ALL, FORMATTED, std::cout)
-		}
 	}
 	namespace QuickSortAsync {
 		struct Sample : public OOTestNS::Pledge
@@ -106,17 +91,14 @@ namespace Sort {
 			std::vector<int> arr;
 			std::vector<int> output;
 		};
-		auto UnitTest() {
-			BEGIN_TEST("test_cases_sort_qsort_async.csv")
-				ADD_TEST(Sort::QuickSortAsync, Sample);
-			END_TEST(ALL, FORMATTED, std::cout)
-		}
 	}
 	auto UnitTest() {
-		MergeSort::UnitTest();
-		MergeSortAsync::UnitTest();
-		QuickSort::UnitTest();
-		QuickSortAsync::UnitTest();
+		BEGIN_TEST("test_cases_sort.csv")
+			ADD_TEST(Sort::QuickSort, Sample);
+			ADD_TEST(Sort::QuickSortAsync, Sample);
+			ADD_TEST(Sort::MergeSort, Sample);
+			ADD_TEST(Sort::MergeSortAsync, Sample);
+		END_TEST(ALL, FORMATTED, std::cout)
 
 	}
 }

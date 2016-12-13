@@ -98,42 +98,49 @@
       <OptimizeReferences>true</OptimizeReferences>
     </Link>
   </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>$(ProjectDir)\inc;D:\Projects\UnitTestFramework\UnitTestFramework;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+  </ItemDefinitionGroup>
   <ItemGroup>
-    <ClInclude Include="algorithms\inc\algo\heapq.h" />
-    <ClInclude Include="algorithms\inc\algo\IntegerKnapsack.h" />
-    <ClInclude Include="algorithms\inc\algo\Lev.h" />
-    <ClInclude Include="algorithms\inc\algo\LIS.h" />
-    <ClInclude Include="algorithms\inc\algo\Loop.h" />
-    <ClInclude Include="algorithms\inc\algo\LPS.h" />
-    <ClInclude Include="algorithms\inc\algo\max_sub_array.h" />
-    <ClInclude Include="algorithms\inc\algo\Maze.h" />
-    <ClInclude Include="algorithms\inc\algo\mergesort.h" />
-    <ClInclude Include="algorithms\inc\algo\mergesort_async.h" />
-    <ClInclude Include="algorithms\inc\algo\MVCS.h" />
-    <ClInclude Include="algorithms\inc\algo\Permutation.h" />
-    <ClInclude Include="algorithms\inc\algo\qsort.h" />
-    <ClInclude Include="algorithms\inc\algo\qsort_async.h" />
-    <ClInclude Include="algorithms\inc\algo\RLD.h" />
-    <ClInclude Include="algorithms\inc\algo\Server.h" />
-    <ClInclude Include="algorithms\inc\cc\Ideas.h" />
-    <ClInclude Include="algorithms\inc\cc\Qualys.h" />
-    <ClInclude Include="algorithms\inc\cc\Sapient.h" />
-    <ClInclude Include="algorithms\inc\cc\Sapient_Madhu.h" />
-    <ClInclude Include="algorithms\inc\cc\Wise.h" />
-    <ClInclude Include="algorithms\inc\ds\AVL.h" />
-    <ClInclude Include="algorithms\inc\ds\LList.h" />
-    <ClInclude Include="algorithms\inc\ds\SStack.h" />
-    <ClInclude Include="algorithms\inc\ds\Tree.h" />
-    <ClInclude Include="algorithms\inc\tests\TestAlgo.h" />
-    <ClInclude Include="algorithms\inc\tests\TestCodeComp.h" />
-    <ClInclude Include="algorithms\inc\tests\TestLList.h" />
-    <ClInclude Include="algorithms\inc\tests\TestSort.h" />
-    <ClInclude Include="algorithms\inc\tests\TestTree.h" />
-    <ClInclude Include="algorithms\inc\util\c11_type_traits.h" />
-    <ClInclude Include="algorithms\inc\util\Memorize.h" />
-    <ClInclude Include="algorithms\inc\util\pprinter.h" />
-    <ClInclude Include="algorithms\inc\util\Util.h" />
-    <ClInclude Include="algorithms\TestTree.h" />
+    <ClInclude Include="inc\algo\heapq.h" />
+    <ClInclude Include="inc\algo\IntegerKnapsack.h" />
+    <ClInclude Include="inc\algo\Lev.h" />
+    <ClInclude Include="inc\algo\LIS.h" />
+    <ClInclude Include="inc\algo\Loop.h" />
+    <ClInclude Include="inc\algo\LPS.h" />
+    <ClInclude Include="inc\algo\max_sub_array.h" />
+    <ClInclude Include="inc\algo\Maze.h" />
+    <ClInclude Include="inc\algo\mergesort.h" />
+    <ClInclude Include="inc\algo\mergesort_async.h" />
+    <ClInclude Include="inc\algo\MVCS.h" />
+    <ClInclude Include="inc\algo\Permutation.h" />
+    <ClInclude Include="inc\algo\qsort.h" />
+    <ClInclude Include="inc\algo\qsort_async.h" />
+    <ClInclude Include="inc\algo\RLD.h" />
+    <ClInclude Include="inc\algo\Server.h" />
+    <ClInclude Include="inc\cc\Ideas.h" />
+    <ClInclude Include="inc\cc\Qualys.h" />
+    <ClInclude Include="inc\cc\Sapient.h" />
+    <ClInclude Include="inc\cc\Sapient_Madhu.h" />
+    <ClInclude Include="inc\cc\Wise.h" />
+    <ClInclude Include="inc\ds\Array.h" />
+    <ClInclude Include="inc\ds\AVL.h" />
+    <ClInclude Include="inc\ds\LList.h" />
+    <ClInclude Include="inc\ds\Queues.h" />
+    <ClInclude Include="inc\ds\SStack.h" />
+    <ClInclude Include="inc\ds\Tree.h" />
+    <ClInclude Include="inc\tests\TestAlgo.h" />
+    <ClInclude Include="inc\tests\TestArray.h" />
+    <ClInclude Include="inc\tests\TestCodeComp.h" />
+    <ClInclude Include="inc\tests\TestLList.h" />
+    <ClInclude Include="inc\tests\TestSort.h" />
+    <ClInclude Include="inc\tests\TestTree.h" />
+    <ClInclude Include="inc\util\c11_type_traits.h" />
+    <ClInclude Include="inc\util\Memorize.h" />
+    <ClInclude Include="inc\util\pprinter.h" />
+    <ClInclude Include="inc\util\Util.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="meeting_room.cpp" />

@@ -33,110 +33,116 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="algorithms\inc\util\c11_type_traits.h">
+    <ClInclude Include="inc\ds\Array.h">
+      <Filter>Header Files\inc\ds</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\tests\TestAlgo.h">
+      <Filter>Header Files\inc\tests</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\tests\TestCodeComp.h">
+      <Filter>Header Files\inc\tests</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\tests\TestLList.h">
+      <Filter>Header Files\inc\tests</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\tests\TestSort.h">
+      <Filter>Header Files\inc\tests</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\tests\TestTree.h">
+      <Filter>Header Files\inc\tests</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\ds\AVL.h">
+      <Filter>Header Files\inc\ds</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\ds\LList.h">
+      <Filter>Header Files\inc\ds</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\ds\Queues.h">
+      <Filter>Header Files\inc\ds</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\ds\SStack.h">
+      <Filter>Header Files\inc\ds</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\ds\Tree.h">
+      <Filter>Header Files\inc\ds</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\algo\heapq.h">
+      <Filter>Header Files\inc\algo</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\algo\IntegerKnapsack.h">
+      <Filter>Header Files\inc\algo</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\algo\Lev.h">
+      <Filter>Header Files\inc\algo</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\algo\LIS.h">
+      <Filter>Header Files\inc\algo</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\algo\Loop.h">
+      <Filter>Header Files\inc\algo</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\algo\LPS.h">
+      <Filter>Header Files\inc\algo</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\algo\max_sub_array.h">
+      <Filter>Header Files\inc\algo</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\algo\Maze.h">
+      <Filter>Header Files\inc\algo</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\algo\mergesort.h">
+      <Filter>Header Files\inc\algo</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\algo\mergesort_async.h">
+      <Filter>Header Files\inc\algo</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\algo\MVCS.h">
+      <Filter>Header Files\inc\algo</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\algo\Permutation.h">
+      <Filter>Header Files\inc\algo</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\algo\qsort.h">
+      <Filter>Header Files\inc\algo</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\algo\qsort_async.h">
+      <Filter>Header Files\inc\algo</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\algo\RLD.h">
+      <Filter>Header Files\inc\algo</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\algo\Server.h">
+      <Filter>Header Files\inc\algo</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\cc\Ideas.h">
+      <Filter>Header Files\inc\cc</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\cc\Qualys.h">
+      <Filter>Header Files\inc\cc</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\cc\Sapient.h">
+      <Filter>Header Files\inc\cc</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\cc\Sapient_Madhu.h">
+      <Filter>Header Files\inc\cc</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\cc\Wise.h">
+      <Filter>Header Files\inc\cc</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\util\c11_type_traits.h">
       <Filter>Header Files\inc\util</Filter>
     </ClInclude>
-    <ClInclude Include="algorithms\inc\cc\Ideas.h">
-      <Filter>Header Files\inc\cc</Filter>
-    </ClInclude>
-    <ClInclude Include="algorithms\inc\algo\Lev.h">
-      <Filter>Header Files\inc\algo</Filter>
-    </ClInclude>
-    <ClInclude Include="algorithms\inc\algo\LIS.h">
-      <Filter>Header Files\inc\algo</Filter>
-    </ClInclude>
-    <ClInclude Include="algorithms\inc\algo\IntegerKnapsack.h">
-      <Filter>Header Files\inc\algo</Filter>
-    </ClInclude>
-    <ClInclude Include="algorithms\inc\ds\AVL.h">
-      <Filter>Header Files\inc\ds</Filter>
-    </ClInclude>
-    <ClInclude Include="algorithms\inc\algo\heapq.h">
-      <Filter>Header Files\inc\ds</Filter>
-    </ClInclude>
-    <ClInclude Include="algorithms\inc\ds\LList.h">
-      <Filter>Header Files\inc\ds</Filter>
-    </ClInclude>
-    <ClInclude Include="algorithms\inc\algo\Loop.h">
-      <Filter>Header Files\inc\algo</Filter>
-    </ClInclude>
-    <ClInclude Include="algorithms\inc\algo\LPS.h">
-      <Filter>Header Files\inc\algo</Filter>
-    </ClInclude>
-    <ClInclude Include="algorithms\inc\algo\max_sub_array.h">
-      <Filter>Header Files\inc\algo</Filter>
-    </ClInclude>
-    <ClInclude Include="algorithms\inc\algo\Maze.h">
-      <Filter>Header Files\inc\algo</Filter>
-    </ClInclude>
-    <ClInclude Include="algorithms\inc\algo\mergesort.h">
-      <Filter>Header Files\inc\algo</Filter>
-    </ClInclude>
-    <ClInclude Include="algorithms\inc\algo\mergesort_async.h">
-      <Filter>Header Files\inc\algo</Filter>
-    </ClInclude>
-    <ClInclude Include="algorithms\inc\algo\MVCS.h">
-      <Filter>Header Files\inc\algo</Filter>
-    </ClInclude>
-    <ClInclude Include="algorithms\inc\algo\Permutation.h">
-      <Filter>Header Files\inc\algo</Filter>
-    </ClInclude>
-    <ClInclude Include="algorithms\inc\algo\qsort.h">
-      <Filter>Header Files\inc\algo</Filter>
-    </ClInclude>
-    <ClInclude Include="algorithms\inc\algo\qsort_async.h">
-      <Filter>Header Files\inc\algo</Filter>
-    </ClInclude>
-    <ClInclude Include="algorithms\inc\util\Memorize.h">
+    <ClInclude Include="inc\util\Memorize.h">
       <Filter>Header Files\inc\util</Filter>
     </ClInclude>
-    <ClInclude Include="algorithms\inc\util\pprinter.h">
+    <ClInclude Include="inc\util\pprinter.h">
       <Filter>Header Files\inc\util</Filter>
     </ClInclude>
-    <ClInclude Include="algorithms\inc\cc\Qualys.h">
-      <Filter>Header Files\inc\cc</Filter>
-    </ClInclude>
-    <ClInclude Include="algorithms\inc\cc\Sapient.h">
-      <Filter>Header Files\inc\cc</Filter>
-    </ClInclude>
-    <ClInclude Include="algorithms\inc\cc\Sapient_Madhu.h">
-      <Filter>Header Files\inc\cc</Filter>
-    </ClInclude>
-    <ClInclude Include="algorithms\TestTree.h">
-      <Filter>Header Files\inc\tests</Filter>
-    </ClInclude>
-    <ClInclude Include="algorithms\inc\tests\TestLList.h">
-      <Filter>Header Files\inc\tests</Filter>
-    </ClInclude>
-    <ClInclude Include="algorithms\inc\tests\TestSort.h">
-      <Filter>Header Files\inc\tests</Filter>
-    </ClInclude>
-    <ClInclude Include="algorithms\inc\tests\TestTree.h">
-      <Filter>Header Files\inc\tests</Filter>
-    </ClInclude>
-    <ClInclude Include="algorithms\inc\tests\TestCodeComp.h">
-      <Filter>Header Files\inc\tests</Filter>
-    </ClInclude>
-    <ClInclude Include="algorithms\inc\tests\TestAlgo.h">
-      <Filter>Header Files\inc\tests</Filter>
-    </ClInclude>
-    <ClInclude Include="algorithms\inc\ds\SStack.h">
-      <Filter>Header Files\inc\ds</Filter>
-    </ClInclude>
-    <ClInclude Include="algorithms\inc\ds\Tree.h">
-      <Filter>Header Files\inc\ds</Filter>
-    </ClInclude>
-    <ClInclude Include="algorithms\inc\cc\Wise.h">
-      <Filter>Header Files\inc\cc</Filter>
-    </ClInclude>
-    <ClInclude Include="algorithms\inc\algo\Server.h">
-      <Filter>Header Files\inc\algo</Filter>
-    </ClInclude>
-    <ClInclude Include="algorithms\inc\util\Util.h">
+    <ClInclude Include="inc\util\Util.h">
       <Filter>Header Files\inc\util</Filter>
     </ClInclude>
-    <ClInclude Include="algorithms\inc\algo\RLD.h">
-      <Filter>Header Files\inc\algo</Filter>
+    <ClInclude Include="inc\tests\TestArray.h">
+      <Filter>Header Files\inc\tests</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
