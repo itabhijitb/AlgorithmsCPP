@@ -1,6 +1,6 @@
 #include <vector>
 #include <algorithm>
-#include "Memorize.h"
+#include "util/Memorize.h"
 namespace DP
 {
 	namespace IntegerKnapsack

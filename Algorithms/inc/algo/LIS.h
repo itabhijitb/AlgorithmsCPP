@@ -1,15 +1,19 @@
 #include <vector>
 #include <algorithm>
 #include <functional>
-#include "Memorize.h"
+#include "util/Memorize.h"
 
 namespace DP
 {
-	namespace LIS
+	namespace LIS /* Longest Increasing Subsequence*/
 	{
 		template<typename Ty>
 		class LIS : public Memorization::Memorize
 		{
+			/*
+			LIS(n) = max(LIS_recur(j) for j in 0..n)
+			LIS_recur(j) = max(LIS_recur(i) + 1 for i in 0..j if arr[i] < arr[j])
+			*/
 		public:
 			template<size_t size>
 			LIS(Ty(&arr)[size]) :m_arr(std::begin(arr), std::end(arr)) {}
@@ -31,7 +35,7 @@ namespace DP
 				{
 					if (m_arr[i] < m_arr[j])
 					{
-						max = std::max(recurse(i) + 1, max);
+						max = std::max(Memoize(&LIS::recurse, this)(i) + 1, max);
 					}
 					
 				}

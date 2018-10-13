@@ -144,6 +144,12 @@
     <ClInclude Include="inc\tests\TestArray.h">
       <Filter>Header Files\inc\tests</Filter>
     </ClInclude>
+    <ClInclude Include="inc\util\Semaphore.h">
+      <Filter>Header Files\inc\util</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\algo\Grid.h">
+      <Filter>Header Files\inc\algo</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="meeting_room.cpp">

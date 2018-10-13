@@ -307,7 +307,5 @@
 //		tree.Flip();
 //	}
 //}
-void UnitTestAll();
-int main() {
-	UnitTestAll();
-}
+
+int main() {}

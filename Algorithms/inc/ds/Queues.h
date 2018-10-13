@@ -1,35 +1,41 @@
-//#ifndef __QUEUES_H__
-//#include <memory>
-//#include <array>
-//
-//
-//class Queue {
-//	const std::size_t K = 10;
-//	Queue() {
-//		for (std::size_t i = 0; i < K; i++) {
-//			*(front + i) = *(rear + i) = *(next + i) = i;
-//			free = K;
-//		}
-//
-//	}
-//	void enqueue(int x, std::size_t qn) {
-//		if (*(front + qn) == -1) {
-//			*(front + qn) 
-//		}
-//		else {
-//
-//		}
-//		*(rear + qn) = 
-//	}
-//	int dequeue(std::size_t qn) {
-//
-//	}
-//private:
-//	std::array<int, 100> arr;
-//	std::size_t free = -1;
-//	std::array<int, 100>::iterator front = arr.end() - 3 * K;
-//	std::array<int, 100>::iterator rear = arr.end() - 2 * K;
-//	std::array<int, 100>::iterator next = arr.end() - K;
-//};
-//#define __QUEUES_H__
-//#endif
+#ifndef __QUEUES_H__
+#define __QUEUES_H__
+#include <queue>
+#include <thread>
+#include "../util/Semaphore.h"
+
+template <typename T, int size>
+class Queue
+{
+public:
+
+	T pop()
+	{
+		sem_lo.wait();
+		auto item = queue_.front();
+		queue_.pop();
+		sem_hi.notify();
+		return item;
+	}
+
+	void pop(T& item)
+	{
+		sem_lo.wait();
+		item = queue_.front();
+		count--;
+		queue_.pop();
+		sem_hi.notify()
+	}
+
+	void push(const T& item)
+	{
+		sem_hi.wait();
+		queue_.push(item);
+		sem_lo.notify();
+	}
+
+private:
+	std::queue<T> queue_;
+	Semaphore sem_lo{ 0 }, sem_hi{ size };
+};
+#endif

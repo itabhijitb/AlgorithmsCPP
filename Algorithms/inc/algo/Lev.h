@@ -6,11 +6,16 @@
 #include "util/Memorize.h"
 namespace DP
 {
-	namespace Lev
+	namespace Lev /*Levestine Distance*/
 	{
 		template<typename Ty>
 		class Levenshtein : public Memorization::Memorize
 		{
+			/*
+			LEV(i, j) = min(LEV(i - 1, j) + 1,
+			                LEV(i, j - 1) + 1,
+							LEV(i - 1, j - 1) + arr[i] != arr[j])
+			*/
 		public:
 			Levenshtein(Ty src, Ty target) :m_source(src), m_target(target) {}
 			size_t operator()()

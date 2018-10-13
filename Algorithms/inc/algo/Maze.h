@@ -1,6 +1,6 @@
 #include <vector>
 #include <map>
-#include "pprinter.h"
+#include "../../../PrintStl/PrintStl/pprintstl.h"
 namespace BackTracking
 {
 	class Maze
@@ -44,7 +44,7 @@ namespace BackTracking
 			else if (x == maze.size() - 1 && y == maze[0].size() - 1)
 			{
 				path_count[x][y] = 1;
-				std::cout<<pprint::pprint<decltype(path)>()(path)<<std::endl;
+				//std::cout<<pprint::pprint<decltype(path)>()(path)<<std::endl;
 			}			
 			else
 			{

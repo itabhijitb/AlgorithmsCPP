@@ -6,8 +6,14 @@
 
 namespace DP
 {
-	namespace LPS
+	namespace LPS /* Longest Palindrom Subsequence*/
 	{
+		/*
+		LPS(i, j) = 1                                 if i == j
+		          = 2                                 if arr[i] == arr[j] and i + 1 == j 
+		          = 2 + LPS(i + 1, j - 1)             if arr[i] == arr[j]
+		          = max(LPS(i, j - 1), LPS(i + 1, j)) otherwise
+		*/
 		template<typename Ty>
 		class LPS : public Memorization::Memorize
 		{
